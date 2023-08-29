@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { FaRegLightbulb } from "react-icons/fa";
+import { BiSolidQuoteAltRight } from 'react-icons/bi';
+import { FaLongArrowAltRight, FaRegLightbulb } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -97,126 +98,115 @@ export default function Home() {
       </section>
 
       {/* About section */}
-      <section className="grid grid-cols-2 gap-12 mt-32 mb-52">
-        <div>
-          <p className="text-[#706e6e]">WE ARE COACH,<br /> PERSONAL DEVELOPMENT & LIFE ADVISOR TEAM.</p>
-          <h2>Visuality</h2>
-          <p>Visuality is about finding simplicity and mindfulness in the daily chaos of our lives. It&#39;s about clearing the clutter so we can focus on what&#39;s important, create something amazing, find happiness. It has over a million readers.</p>
-          <p>We&#39;ve gathered here a group of renowned psychologists, academics, psychiatrists and writers to contribute their thoughts and ideas. We&#39;re a live stream of what&#39;s happening in ‘Personal Development​&#39;.</p>
-          <a>LEARN MORE ABOUT US </a>
+      <section className="bg-[#f9f9f9] grid grid-cols-1 md:grid-cols-2 gap-12 py-32">
+        <div className='px-10'>
+          <p className="text-[#706e6e] font-medium max-w-xs">WE ARE COACH, PERSONAL DEVELOPMENT & LIFE ADVISOR TEAM.</p>
+          <h2 className='text-6xl font-bold py-5'>Visuality</h2>
+          <p className='pb-5'>Visuality is about finding simplicity and mindfulness in the daily chaos of our lives. It&#39;s about clearing the clutter so we can focus on what&#39;s important, create something amazing, find happiness. It has over a million readers.</p>
+          <p className='pb-9'>We&#39;ve gathered here a group of renowned psychologists, academics, psychiatrists and writers to contribute their thoughts and ideas. We&#39;re a live stream of what&#39;s happening in ‘Personal Development​&#39;.</p>
+          <a className='bg-[#f5df4d] font-semibold py-4 px-8 text-base hover:bg-black hover:text-white flex items-center gap-2 w-[280px]'>LEARN MORE ABOUT US <FaLongArrowAltRight /> </a>
         </div>
-        <div>
+        <div className='relative'>
           <Image width={750} height={500} alt="" src="/people-2.jpg" />
+          <div className='bg-[#f5df4d] p-10 max-w-xs absolute bottom-0'>
+            <span className='text-6xl text-white absolute top-[-30px]'><BiSolidQuoteAltRight /></span>
+            <p className='font-bold text-xl'><i>Incredible Insight from Experts on Breaking Free from Limits and Achieving Life Goals</i></p>
+          </div>
         </div>
       </section>
+
+      {/* Blog Section */}
+      <section className='my-32 px-12'>
+        <h2 className="text-4xl font-bold text-center">From The Blog</h2>
+        <p className="text-xl font-bold text-center mt-4 mb-20">Latest news are on top all times from blogs!</p>
+
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-12 '>
+          <div>
+            <div className='bg-[#f5df4d] py-12 px-10 hover:bg-black hover:text-white'>
+              <p className='font-bold text-2xl mb-7'>Imagination was given to man to compensate him for what he is not, and a sense of humor was provided to console him for what he is.</p>
+              <h4>Oscar Wilde</h4>
+            </div>
+            <div className='mt-12 relative'>
+              <Image className='mb-52' src="/home.jpg" alt='' height={598} width={478} />
+              <div className='mr-14 bg-white absolute bottom-[-170px] '>
+                <p className='pt-5'><span className='text-xs text-gray-400'>February 10, 2021 • By</span> <span className='font-semibold cursor-pointer'>JOHN BERG</span></p>
+                <p className='font-bold text-2xl pt-2 hover:text-red-600 hover:underline cursor-pointer'>8 Habits that Turn Dreams into Reality</p>
+                <p className='text-gray-400 py-3'>And as the day advanced and the engine drivers and stokers refused to return to London ...</p>
+                <a className='flex items-center gap-2 text-xs hover:underline cursor-pointer'>READ MORE  <FaLongArrowAltRight /></a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div className='mb-12 relative'>
+                <Image src="/listening.jpg" className='mb-48' alt='' width={478} height={319} />
+                <div className='mr-14 bg-white absolute bottom-[-150px]'>
+                  <p className='pt-5'><span className='text-xs text-gray-400'>February 15, 2021 • By</span> <span className='font-semibold cursor-pointer'>JOHN BERG</span></p>
+                  <p className='font-bold text-2xl pt-2 hover:text-red-600 hover:underline cursor-pointer'>5 Things You Need to Stop Doing to Live a Simpler Life</p>
+                  <p className='text-gray-400 py-3'>At that I gripped my wife&#39;s arm, and without ceremony ran her out into the road...</p>
+                  <a className='flex items-center gap-2 text-xs hover:underline cursor-pointer'>READ MORE  <FaLongArrowAltRight /></a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className='relative'>
+                <Image className='mb-52' src="/reading-2.jpg" alt='' width={478} height={366} />
+                <div className='mr-14 bg-white absolute bottom-[-140px]'>
+                  <p className='pt-5'><span className='text-xs text-gray-400'>December 4, 2021 • By</span> <span className='font-semibold cursor-pointer'>JOHN BERG</span></p>
+                  <p className='font-bold text-2xl pt-2 hover:text-red-600 hover:underline cursor-pointer'>25 Money Mistakes to Avoid</p>
+                  <p className='text-gray-400 py-3'>The British prime minister continually survives the chaos of his choices—much to pundits&#39; chagrin. How?...</p>
+                  <a className='flex items-center gap-2 text-xs hover:underline cursor-pointer'>READ MORE  <FaLongArrowAltRight /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div className='relative'>
+                <Image className='mb-56' src="/street.jpg" alt='' width={478} height={717} />
+                <div className='mr-14 bg-white absolute bottom-[-180px]'>
+                  <p className='pt-5'><span className='text-xs text-gray-400'>February 11, 2021 • By</span> <span className='font-semibold cursor-pointer'>JOHN BERG</span></p>
+                  <p className='font-bold text-2xl pt-2 hover:text-red-600 hover:underline cursor-pointer'>Why The Tourism Industry Shouldn&#39;t Go Back To Normal</p>
+                  <p className='text-gray-400 py-3'>It did so indeed, and much sooner than she had expected ...</p>
+                  <a className='flex items-center gap-2 text-xs hover:underline cursor-pointer'>READ MORE  <FaLongArrowAltRight /></a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className='relative'>
+                <Image className='mb-56' src="/car.jpg" alt='' width={478} height={319} />
+                <div className='mr-14 bg-white absolute bottom-[-195px]'>
+                  <p className='pt-5'><span className='text-xs text-gray-400'>December 2, 2020 • By</span> <span className='font-semibold cursor-pointer'>JOHN BERG</span></p>
+                  <p className='font-bold text-2xl pt-2 hover:text-red-600 hover:underline cursor-pointer'>How Ordinary People Can Help Their Country</p>
+                  <p className='text-gray-400 py-3'>By the light of the now brilliant moons I saw that he was but a shadow of his former self, and as he turned from my caress and commenced...</p>
+                  <a className='flex items-center gap-2 text-xs hover:underline cursor-pointer'>READ MORE  <FaLongArrowAltRight /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a className='bg-[#f5df4d] cursor-pointer font-semibold py-4 px-8 text-base hover:bg-black hover:text-white flex items-center mx-auto gap-2 w-[280px]'>MORE FROM THE BLOG <FaLongArrowAltRight /> </a>
+      </section>
+
+      {/* Events Section */}
+      <section className='my-32 px-12'>
+        <h2 className="text-4xl font-bold text-center">Upcoming Events</h2>
+        {/* <p className="text-xl font-bold text-center mt-4 mb-20">Learn the “things I wish they had taught me in school”</p> */}
+
+        <div>
+
+          <div></div>
+
+          <div></div>
+
+        </div>
+
+      </section>
     </main>
-
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-    //     <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-    //       Get started by editing&nbsp;
-    //       <code className="font-mono font-bold">src/app/page.js</code>
-    //     </p>
-    //     <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-    //       <a
-    //         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-    //         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         By{' '}
-    //         <Image
-    //           src="/vercel.svg"
-    //           alt="Vercel Logo"
-    //           className="dark:invert"
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-    //     <Image
-    //       className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-    //       src="/next.svg"
-    //       alt="Next.js Logo"
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //   </div>
-
-    //   <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-    //     <a
-    //       href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Docs{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Find in-depth information about Next.js features and API.
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Learn{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Learn about Next.js in an interactive course with&nbsp;quizzes!
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Templates{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Explore the Next.js 13 playground.
-    //       </p>
-    //     </a>
-
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Deploy{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
   )
 }

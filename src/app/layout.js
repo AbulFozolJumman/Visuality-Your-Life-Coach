@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Home | Visuality',
-  description: 'Your Life Coach',
+  description: 'Self improvement and Life coach',
 }
 
 export default function RootLayout({ children }) {
