@@ -19,14 +19,14 @@ export default function Home() {
         </div>
         <div className="mr-auto">
           <input className="p-4" type="email" name="EMAIL" placeholder="Your email address" required />
-          <input className="py-4 px-10 bg-[#f5df4d]" type="submit" value="Sign up"></input>
+          <input className="py-4 px-10 bg-[#f5df4d] font-semibold hover:bg-black hover:text-white" type="submit" value="Sign up"></input>
         </div>
       </section>
 
       {/* Rules Section */}
       <section className="mt-28 mb-64">
         <h2 className="text-4xl font-bold text-center">With your own rules!</h2>
-        <p className="text-xl font-bold text-center mt-4 mb-20">How to play different game in your life</p>
+        <p className="text-2xl font-bold text-center mt-4 mb-20">How to play different game in your life</p>
         <div className="grid grid-cols-2 justify-center items-start">
           <div>
             <div className="grid grid-cols-2 px-12 gap-12">
@@ -97,14 +97,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About section */}
+      {/* Visuality section */}
       <section className="bg-[#f9f9f9] grid grid-cols-1 md:grid-cols-2 gap-12 py-32">
         <div className='px-10'>
           <p className="text-[#706e6e] font-medium max-w-xs">WE ARE COACH, PERSONAL DEVELOPMENT & LIFE ADVISOR TEAM.</p>
           <h2 className='text-6xl font-bold py-5'>Visuality</h2>
           <p className='pb-5'>Visuality is about finding simplicity and mindfulness in the daily chaos of our lives. It&#39;s about clearing the clutter so we can focus on what&#39;s important, create something amazing, find happiness. It has over a million readers.</p>
           <p className='pb-9'>We&#39;ve gathered here a group of renowned psychologists, academics, psychiatrists and writers to contribute their thoughts and ideas. We&#39;re a live stream of what&#39;s happening in ‘Personal Development​&#39;.</p>
-          <a className='bg-[#f5df4d] font-semibold py-4 px-8 text-base hover:bg-black hover:text-white flex items-center gap-2 w-[280px]'>LEARN MORE ABOUT US <FaLongArrowAltRight /> </a>
+          <a className='bg-[#f5df4d] font-bold py-4 px-8 cursor-pointer text-base hover:bg-black hover:text-white flex items-center gap-2 w-[280px]'>LEARN MORE ABOUT US <FaLongArrowAltRight /> </a>
         </div>
         <div className='relative'>
           <Image width={750} height={500} alt="" src="/people-2.jpg" />
@@ -118,7 +118,7 @@ export default function Home() {
       {/* Blog Section */}
       <section className='my-32 px-12'>
         <h2 className="text-4xl font-bold text-center">From The Blog</h2>
-        <p className="text-xl font-bold text-center mt-4 mb-20">Latest news are on top all times from blogs!</p>
+        <p className="text-2xl font-bold text-center mt-4 mb-20">Latest news are on top all times from blogs!</p>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-12 '>
           <div>
@@ -194,15 +194,53 @@ export default function Home() {
       </section>
 
       {/* Events Section */}
-      <section className='my-32 px-12'>
+      <section className='mt-32 mb-40 px-12'>
         <h2 className="text-4xl font-bold text-center">Upcoming Events</h2>
-        {/* <p className="text-xl font-bold text-center mt-4 mb-20">Learn the “things I wish they had taught me in school”</p> */}
+        <p className="text-2xl font-bold text-center mt-4 mb-20">Learn the “things I wish they had taught me in school”</p>
 
-        <div>
+        <div className='flex items-start gap-[60px]'>
 
-          <div></div>
+          <div className='w-[60%]'>
 
-          <div></div>
+            <div className='flex gap-8 items-start justify-between p-8 border'>
+              <Image className='rounded-full w-28' src="/people-3.jpg" width={250} height={250} alt='' />
+              <div>
+                <p className='text-gray-600 text-sm'><span className='text-black bg-[#f5df4d] hover:text-white hover:bg-black mr-4 p-1'>Mar 07 - Mar 12</span>12:00 am</p>
+                <p className='hover:text-red-500 cursor-pointer font-bold mt-3 mb-2 text-lg'>How to Build Confidence in Your Abilities</p>
+                <p className='text-gray-600'>Overcome your limiting beliefs and achieve your goals.</p>
+              </div>
+              <a className='px-8 py-4 bg-[#f5df4d] cursor-pointer font-bold hover:text-white hover:bg-black'>DETAILS</a>
+            </div>
+
+            <div className='flex gap-8 items-start justify-between p-8 border'>
+              <Image className='rounded-full w-28' src="/reading-4.jpg" width={250} height={250} alt='' />
+              <div>
+                <p className='text-gray-600 text-sm'><span className='text-black bg-[#f5df4d] hover:text-white hover:bg-black mr-4 p-1'>Mar 14 - Mar 17</span>10:00 am</p>
+                <p className='hover:text-red-500 cursor-pointer font-bold mt-3 mb-2 text-lg'>A Stress Management for Leaders</p>
+                <p className='text-gray-600'>3 step framework for stress management, anxiety relief, and improved emotional intelligence using applied meditation.</p>
+              </div>
+              <a className='px-8 py-4 bg-[#f5df4d] cursor-pointer font-bold hover:text-white hover:bg-black'>DETAILS</a>
+            </div>
+
+            <div className='flex gap-8 items-start justify-between p-8 border'>
+              <Image className='rounded-full w-28' src="/reading-3.jpg" width={250} height={250} alt='' />
+              <div>
+                <p className='text-gray-600 text-sm'><span className='text-black bg-[#f5df4d] hover:text-white hover:bg-black mr-4 p-1'>Mar 15 - Mar 18</span>12:00 am</p>
+                <p className='hover:text-red-500 cursor-pointer font-bold mt-3 mb-2 text-lg'>Critical Thinking - An Upgrade For Your Mind</p>
+                <p className='text-gray-600'>This course aims to make you a more rigorous, effective, and creative thinker.</p>
+              </div>
+              <a className='px-8 py-4 bg-[#f5df4d] cursor-pointer font-bold hover:text-white hover:bg-black'>DETAILS</a>
+            </div>
+
+            <a className='bg-[#f5df4d] font-bold py-4 px-8 text-base hover:bg-black hover:text-white flex items-center gap-2 w-[230px] mt-12 cursor-pointer'>BROWSE EVENTS <FaLongArrowAltRight /> </a>
+
+          </div>
+
+          <div className='w-[40%] relative'>
+            <p className="bg-[#f5df4d] p-9 text-6xl w-[140px] absolute top-14 left-20"><FaRegLightbulb></FaRegLightbulb></p>
+            <Image className='pl-[150px]' src="/writing.jpg" alt='' width={500} height={800} />
+            <Image width={300} height={350} alt="" className="absolute bottom-[-250px] left-0" src="/car-2.jpg" />
+          </div>
 
         </div>
 
