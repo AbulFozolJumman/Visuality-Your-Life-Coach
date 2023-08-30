@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
 
         {/* Footer */}
         <footer className='bg-[#1e1e1e]'>
-          <div className='flex items-center justify-center gap-8 border-b-2 border-gray-600 p-12'>
+          <div className='flex flex-wrap items-center justify-center gap-8 border-b-2 border-gray-600 p-12'>
             <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaFacebookF /></span> FACEBOOK</p>
             <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaTwitter /></span> TWITTER</p>
             <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaTiktok /></span> TIKTOK</p>
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
             <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaSearch /></span> SEARCH</p>
           </div>
 
-          <div className='flex items-center justify-between p-12 text-[#f5df4d] text-sm'>
+          <div className='flex flex-col-reverse md:flex-row items-center justify-between p-12 text-[#f5df4d] text-sm gap-8'>
             <p>Copyright © 2021 - Visuality Theme</p>
             <div>
               <a className='pl-5 cursor-pointer hover:text-white font-bold'>Home</a>
