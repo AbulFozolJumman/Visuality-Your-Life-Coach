@@ -245,6 +245,54 @@ export default function Home() {
         </div>
 
       </section>
+
+      {/* Pricing section */}
+      <section className=" max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto ">
+        <h2 className="text-4xl font-bold text-center">Pricing</h2>
+        <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-12">Choose Your Best Plan</p>
+        <div className="mb-12 flex items-start justify-center gap-10">
+
+          <div className="p-8 max-w-[360px] border-2 border-[#23A6F0] rounded-[30px] hover:scale-110 duration-300">
+
+            <div className="flex items-start justify-between mb-8">
+              <div>
+                <p className="text-[10px] font-bold">PLAN</p>
+                <h4 className="text-[22px] font-bold text-[#23A6F0]">Business</h4>
+              </div>
+              <a className="text-[10px] font-extrabold text-[#23A6F0] py-2 px-4 border border-[#23A6F0] rounded-2xl"
+                href="#">BEST SELLER</a>
+            </div>
+
+            <div className="flex justify-start items-end mb-3 gap-4">
+              <div className="flex justify-start items-start">
+                <p className="text-[22px] font-medium text-[#23A6F0]">$</p>
+                <h2 className="text-[55px] leading-[55px] font-bold text-[#23A6F0]">19</h2>
+              </div>
+              <p className="text-[14px] font-medium text-[#23A6F0]">Editor/month</p>
+            </div>
+
+            <p className="text-[14px] mb-5">For professional business, billed annually or $15 month-to-month.</p>
+            <hr className="border-2 border-[#23A6F0] mb-[61px]" />
+
+            <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
+              <Image src="/Check-green.png" alt="" width={20} height={20} />
+                Invite-only private projects</p>
+            <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
+              <Image src="/Check-green.png" alt="" width={20} height={20} />
+                Custom file/user permissions</p>
+            <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
+              <Image src="/Check-green.png" alt="" width={20} height={20} />
+                30-day version history</p>
+            <p className="text-[14px font-medium] flex items-center gap-2 mb-10">
+              <Image src="/Check-green.png" alt="" width={20} height={20} />
+                Shareable team libraries</p>
+
+            <a className="text-white font-medium w-[180px] mx-auto bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 rounded-[5px] flex justify-center items-center gap-2 text-[15px] hover:bg-gradient-to-r hover:from-[#FFFFFF] hover:to-[#FFFFFF] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px]"
+              href="#">Choose Business</a>
+          </div>
+
+        </div>
+      </section>
     </main>
   )
 }
