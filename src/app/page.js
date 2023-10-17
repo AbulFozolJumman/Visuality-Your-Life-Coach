@@ -114,9 +114,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* How it works */}
+      <section className='py-12 mt-16 md:mt-0'>
+        <h2 className="text-4xl font-bold text-center">How Does It Works</h2>
+        <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-12">The best tuition online couldn&#39;t get easier than this. Start classes in 3 simple steps.</p>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
+          <div>
+            <Image className='mx-auto' src="/how1.png" alt="" width={96} height={96} />
+            <h2 className='text-center pt-8 pb-3 font-bold text-2xl'><span className='text-[#999E9F]'>01.</span> Book a demo</h2>
+            <p className='text-center text-lg'>Demo class with a matching tutor</p>
+          </div>
+          <div>
+            <Image className='mx-auto' src="/how2.png" alt="" width={96} height={96} />
+            <h2 className='text-center pt-8 pb-3 font-bold text-2xl'><span className='text-[#999E9F]'>02.</span> Join live demo class</h2>
+            <p className='text-center text-lg'>Attend the Demo class as scheduled.</p>
+          </div>
+          <div>
+            <Image className='mx-auto' src="/how3.png" alt="" width={96} height={96} />
+            <h2 className='text-center pt-8 pb-3 font-bold text-2xl'><span className='text-[#999E9F]'>03.</span> Pay and start</h2>
+            <p className='text-center text-lg'>Pay and start your Classes.</p>
+          </div>
+        </div>
+      </section>
 
       {/* Blog Section */}
-      <section className='md:mt-8 mt-32 mb-14 md:mb-32 px-0 md:px-12'>
+      <section className='md:mt-8 mt-8 mb-14 md:mb-32 px-0 md:px-12'>
         <h2 className="text-4xl font-bold text-center">From The Blog</h2>
         <p className="text-2xl font-bold text-center mt-3 md:mt-4 mb-8 md:mb-20 px-5">Latest news are on top all times from blogs!</p>
 
@@ -276,16 +299,16 @@ export default function Home() {
 
             <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
               <Image src="/Check-green.png" alt="" width={20} height={20} />
-                Invite-only private projects</p>
+              Invite-only private projects</p>
             <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
               <Image src="/Check-green.png" alt="" width={20} height={20} />
-                Custom file/user permissions</p>
+              Custom file/user permissions</p>
             <p className="text-[14px font-medium] flex items-center gap-2 mb-3">
               <Image src="/Check-green.png" alt="" width={20} height={20} />
-                30-day version history</p>
+              30-day version history</p>
             <p className="text-[14px font-medium] flex items-center gap-2 mb-10">
               <Image src="/Check-green.png" alt="" width={20} height={20} />
-                Shareable team libraries</p>
+              Shareable team libraries</p>
 
             <a className="text-white font-medium w-[180px] mx-auto bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 rounded-[5px] flex justify-center items-center gap-2 text-[15px] hover:bg-gradient-to-r hover:from-[#FFFFFF] hover:to-[#FFFFFF] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px]"
               href="#">Choose Business</a>
@@ -293,6 +316,7 @@ export default function Home() {
 
         </div>
       </section>
+
     </main>
   )
 }
