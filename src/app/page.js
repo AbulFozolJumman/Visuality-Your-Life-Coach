@@ -114,7 +114,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* How it works */}
       <section className='py-12 mt-16 md:mt-0'>
         <h2 className="text-4xl font-bold text-center">How Does It Works</h2>
@@ -314,6 +314,47 @@ export default function Home() {
               href="#">Choose Business</a>
           </div>
 
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className='py-12 px-5 md:px-12'>
+        <h2 className="text-4xl font-bold text-center">Why Choose Us?</h2>
+        <p className="text-2xl font-bold text-center mt-3 md:mt-4 mb-8 px-5">Visuality is a unique platform offering session for a wide range of subjects, activities and foreign languages. We provide quality learning at affordable prices. You only pay for the classes attended. And you get a FREE first demo class!</p>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why11.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>Online Session</h2>
+            <p className='text-base text-center'>No travel. No distractions. Learn from the best tutors from the comfort of your home.</p>
+          </div>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why12.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>Dedicated Experts</h2>
+            <p className='text-base text-center'>We connect the best experts online for all your needs</p>
+          </div>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why13.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>You are the focus
+            </h2>
+            <p className='text-base text-center'>Online sessions personalized just for you! Learn at your convenience</p>
+          </div>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why14.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>Session Management
+            </h2>
+            <p className='text-base text-center'>Get session feedback, summary, and progress details after each session on your dashboard.</p>
+          </div>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why15.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>100% Customized Sessions
+            </h2>
+            <p className='text-base text-center'>Set up Sessions according to your time. Learn from a expert who suits you.</p>
+          </div>
+          <div className='bg-[#f5df4d] rounded-[6px] p-5'>
+            <Image className='mx-auto mb-2' src="/why16.png" alt="" width={50} height={50} />
+            <h2 className='text-2xl font-bold text-center pb-2 hover:text-[#60ecff]'>Expert Replacement</h2>
+            <p className='text-base text-center'>Get instant expert replacement anytime. No questions asked.</p>
+          </div>
         </div>
       </section>
 
