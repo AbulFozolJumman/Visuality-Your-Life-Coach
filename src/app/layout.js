@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <div className="navbar py-3">
             <div className="navbar-start">
               <div className="dropdown">
-                <label tabIndex={0} className="items-center gap-2 lg:hidden flex bg-[#f5df4d] p-2 hover:bg-black hover:text-white">
+                <label tabIndex={0} className="items-center gap-2 lg:hidden flex bg-[#f5df4d] p-2 hover:bg-black hover:text-[#f5df4d]">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                   <p className='font-bold'>Menu</p>
                 </label>
@@ -40,17 +40,17 @@ export default function RootLayout({ children }) {
                   <li><a className='hover:text-gray-500 font-bold p-3'>Events</a></li>
                   <li><a className='hover:text-gray-500 font-bold p-3'>Purchase</a></li>
                   <li>
-                    <a href='mailto:abulfozoljumman@gmail.com' className="flex items-center gap-3 cursor-pointer bg-[#f5df4e] hover:bg-gray-400 p-3 rounded-[40px] text-black">
+                    <a href='mailto:abulfozoljumman@gmail.com' className="flex items-center gap-3 cursor-pointer bg-[#f5df4e] hover:bg-black p-2 rounded-md text-black hover:text-[#f5df4e]">
                       <BiMessageRoundedDots className='text-5xl hidden md:block'></BiMessageRoundedDots>
                       <div>
-                        <p className='font-bold text-lg'>abulfozoljumman@gmail.com</p>
-                        <p>Talk To Us</p>
+                        <p className='font-bold text-base'>abulfozoljumman@gmail.com</p>
+                        <p className='text-xs'>Talk To Us</p>
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
-              <a className="btn btn-ghost normal-case text-2xl md:ml-12 ml-20">Visuality</a>
+              <a className="btn btn-ghost normal-case text-3xl md:ml-12 ml-20">Visuality</a>
             </div>
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1">
@@ -71,11 +71,11 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
             <div className="navbar-end md:pr-12">
-              <a href='mailto:abulfozoljumman@gmail.com' className="md:flex items-center gap-1 cursor-pointer bg-[#f5df4e] hover:bg-gray-400 p-3 hidden rounded-[40px]">
-                <BiMessageRoundedDots className='text-5xl '></BiMessageRoundedDots>
+              <a href='mailto:abulfozoljumman@gmail.com' className="md:flex items-center gap-1 cursor-pointer bg-[#f5df4e] hover:bg-black p-2 hidden rounded-[40px] hover:text-[#f5df4e]">
+                <BiMessageRoundedDots className='text-4xl '></BiMessageRoundedDots>
                 <div>
-                  <p className='font-bold text-lg'>abulfozoljumman@gmail.com</p>
-                  <p>Talk To Us</p>
+                  <p className='font-bold text-base'>abulfozoljumman@gmail.com</p>
+                  <p className='text-sm'>Talk To Us</p>
                 </div>
               </a>
             </div>
@@ -87,15 +87,15 @@ export default function RootLayout({ children }) {
         {/* Footer */}
         <footer className='bg-[#1e1e1e]'>
           <div className='flex flex-wrap items-center justify-center gap-8 border-b-2 border-gray-600 p-12'>
-            <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaFacebookF /></span> FACEBOOK</p>
-            <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaTwitter /></span> TWITTER</p>
-            <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaTiktok /></span> TIKTOK</p>
-            <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaInstagram /></span> INSTAGRAM</p>
-            <p className='bg-[#f5df4d] py-2 px-4 font-bold rounded-3xl hover:bg-gray-600 flex items-center gap-3 hover:text-[#f5df4d] cursor-pointer'><span><FaSearch /></span> SEARCH</p>
+            <p className='bg-[#ffe017] py-2 px-4 font-bold rounded-3xl hover:bg-black flex items-center gap-3 hover:text-[#ffe017] cursor-pointer'><span><FaFacebookF /></span> FACEBOOK</p>
+            <p className='bg-[#ffe017] py-2 px-4 font-bold rounded-3xl hover:bg-black flex items-center gap-3 hover:text-[#ffe017] cursor-pointer'><span><FaTwitter /></span> TWITTER</p>
+            <p className='bg-[#ffe017] py-2 px-4 font-bold rounded-3xl hover:bg-black flex items-center gap-3 hover:text-[#ffe017] cursor-pointer'><span><FaTiktok /></span> TIKTOK</p>
+            <p className='bg-[#ffe017] py-2 px-4 font-bold rounded-3xl hover:bg-black flex items-center gap-3 hover:text-[#ffe017] cursor-pointer'><span><FaInstagram /></span> INSTAGRAM</p>
+            <p className='bg-[#ffe017] py-2 px-4 font-bold rounded-3xl hover:bg-black flex items-center gap-3 hover:text-[#ffe017] cursor-pointer'><span><FaSearch /></span> SEARCH</p>
           </div>
 
           <div className='flex flex-col-reverse md:flex-row items-center justify-between p-12 text-[#f5df4d] text-sm gap-8'>
-            <p>Copyright © 2021 - Visuality Theme</p>
+            <p>Copyright © 2023 - Visuality Theme</p>
             <div>
               <a className='pl-5 cursor-pointer hover:text-white font-bold'>Home</a>
               <a className='pl-5 cursor-pointer hover:text-white font-bold'>About Us</a>
