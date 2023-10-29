@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className='py-12 mt-16 md:mt-0'>
+      <section className='pt-12 pb-6 mt-16 md:mt-0'>
         <h2 className="text-4xl font-bold text-center">How Does It Works</h2>
         <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-12">The best tuition online couldn&#39;t get easier than this. Start classes in 3 simple steps.</p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
@@ -140,9 +140,9 @@ export default function Home() {
       </section>
 
       {/* Blog Section */}
-      <section className='md:mt-8 mt-8 mb-14 md:mb-32 px-0 md:px-12'>
+      <section className='bg-[#f9f9f9] py-12 md:mt-8 mt-8 mb-14 md:mb-12 px-0 md:px-12'>
         <h2 className="text-4xl font-bold text-center">From The Blog</h2>
-        <p className="text-2xl font-bold text-center mt-3 md:mt-4 mb-8 md:mb-20 px-5">Latest news are on top all times from blogs!</p>
+        <p className="text-2xl font-bold text-center mt-3 md:mt-4 mb-8 md:mb-10 px-5">Latest news are on top all times from blogs!</p>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-12'>
           <div>
@@ -218,9 +218,9 @@ export default function Home() {
       </section>
 
       {/* Events Section */}
-      <section className='md:mt-32 mb-14 md:mb-40 md:px-12'>
+      <section className='md:mt-20 mb-14 md:mb-40 md:px-12'>
         <h2 className="text-4xl font-bold text-center">Upcoming Events</h2>
-        <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-20">Learn the “things I wish they had taught me in school”</p>
+        <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-10">Learn the “things I wish they had taught me in school”</p>
 
         <div className='flex flex-col md:flex-row items-start gap-8 md:gap-[60px]'>
 
@@ -271,7 +271,7 @@ export default function Home() {
       </section>
 
       {/* Pricing section */}
-      <section className=" max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto ">
+      <section className="bg-[#f9f9f9] py-12 max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto ">
         <h2 className="text-4xl font-bold text-center">Pricing</h2>
         <p className="text-2xl font-bold text-center px-5 mt-4 mb-8 md:mb-12">Choose Your Best Plan</p>
         <div className="mb-12 flex items-start justify-center gap-10">
